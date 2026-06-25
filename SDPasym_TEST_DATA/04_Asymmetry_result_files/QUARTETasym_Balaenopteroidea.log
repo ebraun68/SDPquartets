@@ -1,0 +1,49 @@
+COMMAND: python rgc_quartet_asym.py -i Balaenopteroidea.nex -t Balaenopteroidea_ASTRAL_BP_species.tree -o QUARTETasym_Balaenopteroidea
+
+[2026-05-12 21:43:58] Quartet Asymmetry Test started
+[2026-05-12 21:43:58] Detected input format: NEXUS
+[2026-05-12 21:43:58] Read 7 taxa, 17225 characters
+[2026-05-12 21:43:58] Reading species tree...
+[2026-05-12 21:43:58] Tree has 6 internal nodes
+[2026-05-12 21:43:58] Extracting quadripartitions...
+[2026-05-12 21:43:58] Found 4 quadripartitions
+[2026-05-12 21:43:58] Analyzing 24 valid quartets across 4 quadripartitions...
+[2026-05-12 21:43:58] Quartet analysis complete
+[2026-05-12 21:43:58] Writing detailed results to QUARTETasym_Balaenopteroidea.quartet_asym.tsv
+[2026-05-12 21:43:58] Writing summary to QUARTETasym_Balaenopteroidea.quadripartition_summary.tsv
+[2026-05-12 21:43:58] Writing labeled tree to QUARTETasym_Balaenopteroidea.labeled_tree.tre
+======================================================================
+Quartet Asymmetry Test Summary
+======================================================================
+Input file:        Balaenopteroidea.nex
+Species tree:      Balaenopteroidea_ASTRAL_BP_species.tree
+Taxa:              7
+Characters:        17225
+Quadripartitions:  4
+Total quartets:    24
+Alpha level:       0.05
+----------------------------------------------------------------------
+Majority quartets (ab|cd highest): 21 (87.5%)
+Non-majority quartets:             3 (12.5%)
+----------------------------------------------------------------------
+Asymmetry tests (minority quartets):
+  Significant uncorrected (P<0.05): 16 (66.7%)
+  Significant BH       corrected:    16 (66.7%)
+  Significant BY       corrected:    15 (62.5%)
+  Significant bonferroni corrected:    15 (62.5%)
+  Significant holm     corrected:    16 (66.7%)
+----------------------------------------------------------------------
+Branches with at least one significant minority quartet asymmetry:
+  Significant uncorrected (P<0.05): 4 of 4 branches
+  Significant BH       corrected:    4 of 4 branches
+  Significant BY       corrected:    4 of 4 branches
+  Significant bonferroni corrected:    4 of 4 branches
+  Significant holm     corrected:    4 of 4 branches
+----------------------------------------------------------------------
+Output files:
+  Detailed results: QUARTETasym_Balaenopteroidea.quartet_asym.tsv
+  Summary:          QUARTETasym_Balaenopteroidea.quadripartition_summary.tsv
+  Labeled tree:     QUARTETasym_Balaenopteroidea.labeled_tree.tre
+======================================================================
+[2026-05-12 21:43:58] Analysis complete
+

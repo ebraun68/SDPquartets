@@ -1,0 +1,5 @@
+node1	node2	n_quartets	mean_ab_cd	mean_ac_bd	mean_ad_bc	n_non_majority	n_sig_uncorrected	n_sig_BH	n_sig_BY	n_sig_bonferroni	n_sig_holm	quadripartition
+3	2	6	3362.50	1800.83	1397.50	0	6	6	6	6	6	(BW,SW),(FW,GW,HW)|(MW),(NA)
+4	3	6	3841.17	1669.00	1248.00	0	6	6	6	6	6	(BW),(SW)|(FW,GW,HW),(MW,NA)
+5	3	8	2091.38	1925.88	2037.88	3	3	3	2	2	3	(BW,SW),(MW,NA)|(FW,HW),(GW)
+6	5	4	3287.00	1464.25	1370.75	0	1	1	1	1	1	(BW,MW,NA,SW),(GW)|(FW),(HW)

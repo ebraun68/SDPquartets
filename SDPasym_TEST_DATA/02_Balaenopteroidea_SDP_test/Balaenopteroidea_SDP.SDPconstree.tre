@@ -1,0 +1,35 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Thu Jun 25 10:08:20 2026]
+[!
+>Consensus of 1 trees
+>
+>Source of trees from which consensus(es) calculated...
+>Heuristic search settings:
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      Of 70 total characters:
+>        All characters are of type 'unord'
+>        All characters have equal weight
+>        All characters are parsimony-informative
+>  Starting tree(s) obtained via stepwise addition
+>    Addition sequence: random
+>    Number of replicates = 100
+>    Starting seed = 252506839
+>    Number of trees held at each step = 1
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+>    Steepest descent option not in effect
+>  Initial 'Maxtrees' setting = 100 (will be auto-increased by 100)
+>  Branches collapsed (creating polytomies) if maximum branch length is zero
+>  'MulTrees' option in effect
+>  No topological constraints in effect
+>  Trees are unrooted
+>
+>Heuristic search completed
+>  Total number of rearrangements tried = 2110
+>  Score of best tree(s) found = 76
+>  Number of trees retained = 1
+>  Time used = 0.00 sec (CPU time = 0.00 sec)
+]
+	tree Strict = [&U] (NA,MW,((GW,(FW,HW)),(SW,BW)));
+end;

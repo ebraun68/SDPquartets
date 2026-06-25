@@ -1,0 +1,11 @@
+node1	node2	n_quartets	mean_ab_cd	mean_ac_bd	mean_ad_bc	n_non_majority	n_sig_uncorrected	n_sig_BH	n_sig_BY	n_sig_bonferroni	n_sig_holm	quadripartition
+3	2	10	124.00	0.00	1.40	0	0	0	0	0	0	(aptHaa),(aptOwe)|(aptRow),(casCas,cryCin,droNov,eudEle,Gallus,notPer,rheAme,rhePen,strCam,tinGut)
+4	2	32	663.62	0.00	0.00	0	0	0	0	0	0	(aptHaa,aptOwe),(aptRow)|(casCas,droNov),(cryCin,eudEle,Gallus,notPer,rheAme,rhePen,strCam,tinGut)
+5	4	24	49.46	0.00	0.00	0	0	0	0	0	0	(aptHaa,aptOwe,aptRow),(cryCin,eudEle,Gallus,notPer,rheAme,rhePen,strCam,tinGut)|(casCas),(droNov)
+6	4	72	9.67	5.17	4.50	0	0	0	0	0	0	(aptHaa,aptOwe,aptRow),(casCas,droNov)|(cryCin,eudEle,Gallus,notPer,strCam,tinGut),(rheAme,rhePen)
+7	6	30	1741.17	0.00	0.00	0	0	0	0	0	0	(aptHaa,aptOwe,aptRow,casCas,droNov),(cryCin,eudEle,Gallus,notPer,strCam,tinGut)|(rheAme),(rhePen)
+8	6	80	4.58	0.50	0.68	0	0	0	0	0	0	(aptHaa,aptOwe,aptRow,casCas,droNov),(rheAme,rhePen)|(cryCin,eudEle,notPer,tinGut),(Gallus,strCam)
+9	8	56	259.79	0.00	0.04	0	0	0	0	0	0	(aptHaa,aptOwe,aptRow,casCas,droNov,rheAme,rhePen),(Gallus,strCam)|(cryCin,tinGut),(eudEle,notPer)
+10	9	18	295.22	0.89	0.00	0	0	0	0	0	0	(aptHaa,aptOwe,aptRow,casCas,droNov,Gallus,rheAme,rhePen,strCam),(eudEle,notPer)|(cryCin),(tinGut)
+11	9	18	57.78	5.33	0.89	0	8	0	0	0	0	(aptHaa,aptOwe,aptRow,casCas,droNov,Gallus,rheAme,rhePen,strCam),(cryCin,tinGut)|(eudEle),(notPer)
+12	8	28	17.00	0.00	0.00	0	0	0	0	0	0	(aptHaa,aptOwe,aptRow,casCas,droNov,rheAme,rhePen),(cryCin,eudEle,notPer,tinGut)|(Gallus),(strCam)

@@ -1,0 +1,178 @@
+
+
+[ebraun68@login8 SDPquartets]$ python sdp_quartets.py -i Palaeognathae.nex -o Palaeognathae_SDP -b --clean
+[2026-06-25 09:45:22] SDPquartets analysis started
+[2026-06-25 09:45:22] Generated random seed from system clock: 2131177903
+[2026-06-25 09:45:22] Error: PAUP* not found at 'paup'
+[2026-06-25 09:45:22] Please install PAUP* or specify the correct path with --paup-path
+[ebraun68@login8 SDPquartets]$ module load paup
+[ebraun68@login8 SDPquartets]$ python sdp_quartets.py -i Palaeognathae.nex -o Palaeognathae_SDP -b --clean
+[2026-06-25 09:45:38] SDPquartets analysis started
+[2026-06-25 09:45:38] Generated random seed from system clock: 2131194047
+[2026-06-25 09:45:38] PAUP* found at: paup
+[2026-06-25 09:45:38] Note: Bootstrap analysis requires PAUP*, enabling --paup
+[2026-06-25 09:45:38] Detected input format: NEXUS
+[2026-06-25 09:45:38] Read 13 taxa, 4301 characters
+[2026-06-25 09:45:38] Analyzing 715 quartets...
+[2026-06-25 09:45:39] Quartet analysis complete: 550 resolved, 0 2-way ties, 165 3-way ties
+[2026-06-25 09:45:39] MRP matrix written: 1100 characters
+[2026-06-25 09:45:39] Appending PAUP* block and running optimal tree search...
+[2026-06-25 09:45:39] PAUP* optimal tree analysis completed successfully
+[2026-06-25 09:45:39] Starting bootstrap analysis with 100 replicates...
+[2026-06-25 09:45:39] Bootstrap files will be written to: Palaeognathae_SDP/
+[2026-06-25 09:45:39] Processing bootstrap replicate 1/100
+[2026-06-25 09:45:49] Processing bootstrap replicate 10/100
+[2026-06-25 09:46:00] Processing bootstrap replicate 20/100
+[2026-06-25 09:46:10] Processing bootstrap replicate 30/100
+[2026-06-25 09:46:20] Processing bootstrap replicate 40/100
+[2026-06-25 09:46:30] Processing bootstrap replicate 50/100
+[2026-06-25 09:46:40] Processing bootstrap replicate 60/100
+[2026-06-25 09:46:50] Processing bootstrap replicate 70/100
+[2026-06-25 09:47:00] Processing bootstrap replicate 80/100
+[2026-06-25 09:47:11] Processing bootstrap replicate 90/100
+[2026-06-25 09:47:21] Processing bootstrap replicate 100/100
+[2026-06-25 09:47:22] Bootstrap weighted treefile written: Palaeognathae_SDP.bootstrap_trees.tre
+[2026-06-25 09:47:22] Bootstrap complete: 100/100 successful replicates, 103 total trees
+[2026-06-25 09:47:22] Cleaned up bootstrap directory: Palaeognathae_SDP/
+
+============================================================
+SDPquartets Analysis Summary
+============================================================
+Input file:        Palaeognathae.nex
+Taxa:              13
+Characters:        4301
+Total quartets:    715
+------------------------------------------------------------
+Resolved (1 MP):   550 (76.92%)
+Two-way ties:      0 (0.00%)
+Three-way ties:    165 (23.08%)
+------------------------------------------------------------
+MRP characters:    1100
+Mode:              Compact (2x/1x, 3-way ties excluded)
+Search mode:       Thorough (increase=yes)
+------------------------------------------------------------
+Output files:
+  Quartet log:     Palaeognathae_SDP.quartet_log.tsv
+  Quartet trees:   Palaeognathae_SDP.quartets.tre
+  MRP matrix:      Palaeognathae_SDP.mrp.nex
+  PAUP* trees:     Palaeognathae_SDP.SDPtrees.tre
+  Consensus tree:  Palaeognathae_SDP.SDPconstree.tre
+  Bootstrap dir:   Palaeognathae_SDP/ (cleaned)
+  Bootstrap trees: Palaeognathae_SDP.bootstrap_trees.tre
+  Random seed:     2131194047
+------------------------------------------------------------
+Bootstrap statistics (MP trees per replicate):
+  Single-tree replicates:   97
+  Multi-tree replicates:    3
+  Min / Q1 / Median / Q3 / Max: 1 / 1 / 1 / 1 / 2
+============================================================
+[2026-06-25 09:47:22] Analysis complete
+
+
+############################################################
+#           PAUP* consensus tree generation                #
+############################################################
+
+103 trees read from TREES block; time used = 0.00 sec (CPU time = 0.00 sec)
+Processing of input file "Palaeognathae_SDP.bootstrap_trees.tre" completed.
+paup> deroot;
+103 trees converted from rooted to unrooted.
+paup> outgroup Gallus;
+Outgroup status changed:
+  1 taxon transferred to outgroup
+  Total number of taxa now in outgroup = 1
+  Number of ingroup taxa = 12
+paup> contree all / majrule=yes le50=yes usetreewts=yes;
+Strict consensus of 103 trees:
+                                                                                                                     /----------------------- aptHaa
+                                                                                             /-----------------------+
+                                                                                             |                       \----------------------- aptOwe
+                                                                      /----------------------+
+                                                                      |                      \----------------------------------------------- aptRow
+                                                                      |
+                                                                      |                                              /----------------------- casCas
+                                               /----------------------+----------------------------------------------+
+                                               |                      |                                              \----------------------- droNov
+                                               |                      |
+                                               |                      |                                              /----------------------- rheAme
+                                               |                      \----------------------------------------------+
+                       /-----------------------+                                                                     \----------------------- rhePen
+                       |                       |
+                       |                       |                                                                     /----------------------- cryCin
+                       |                       |                                             /-----------------------+
+                       |                       |                                             |                       \----------------------- tinGut
+/----------------------+                       \---------------------------------------------+
+|                      |                                                                     |                       /----------------------- eudEle
+|                      |                                                                     \-----------------------+
+|                      |                                                                                             \----------------------- notPer
+|                      |
+|                      \--------------------------------------------------------------------------------------------------------------------- strCam
+|
+\-------------------------------------------------------------------------------------------------------------------------------------------- Gallus
+
+50% Majority-rule consensus of 103 trees (using tree weights, sum = 100)
+
+                                                                                                                     /------------------- aptHaa(1)
+                                                                                                 /--------100--------+
+                                                                                                 |                   \------------------- aptOwe(2)
+                                                                              /-------100--------+
+                                                                              |                  \--------------------------------------- aptRow(3)
+                                                          /--------90---------+
+                                                          |                   |                                      /------------------- casCas(4)
+                                                          |                   \-----------------100------------------+
+                                       /-------100--------+                                                          \------------------- droNov(5)
+                                       |                  |
+                                       |                  |                                                          /------------------- rheAme(12)
+                                       |                  \---------------------------100----------------------------+
+                   /--------100--------+                                                                             \------------------- rhePen(13)
+                   |                   |
+                   |                   |                                                                             /------------------- cryCin(6)
+                   |                   |                                                         /--------100--------+
+                   |                   |                                                         |                   \------------------- tinGut(7)
+/------------------+                   \---------------------------100---------------------------+
+|                  |                                                                             |                   /------------------- eudEle(8)
+|                  |                                                                             \--------100--------+
+|                  |                                                                                                 \------------------- notPer(9)
+|                  |
+|                  \--------------------------------------------------------------------------------------------------------------------- strCam(10)
+|
+\---------------------------------------------------------------------------------------------------------------------------------------- Gallus(11)
+
+Bipartitions found in one or more trees and frequency of occurrence:
+
+         1  1
+1234567890123          Freq
+---------------------------
+...........**        100.00
+.........**..        100.00
+.......**....        100.00
+.....**......        100.00
+.....****....        100.00
+.....******..        100.00
+...**........        100.00
+...**********        100.00
+..***********        100.00
+.....********         89.50
+...**......**          6.00
+...********..          4.50
+
+
+
+############################################################
+#                       Taxon List                         #
+############################################################
+
+aptHaa — great spotted kiwi (Apteryx haastii)
+aptOwe — little spotted kiwi (Apteryx owenii)
+aptRow — Okarito brown kiwi (Apteryx rowi) — also "rowi" / Okarito kiwi
+casCas — southern cassowary (Casuarius casuarius)
+droNov — emu (Dromaius novaehollandiae)
+rheAme — greater rhea (Rhea americana)
+rhePen — lesser rhea / Darwin's rhea (Rhea pennata)
+cryCin — thicket tinamou (Crypturellus cinnamomeus)
+tinGut — white-throated tinamou (Tinamus guttatus)
+eudEle — elegant crested tinamou (Eudromia elegans)
+notPer — Chilean tinamou (Nothoprocta perdicaria)
+strCam — ostrich (Struthio camelus)
+Gallus — chicken / red junglefowl (Gallus gallus) ** OUTGROUP **
+

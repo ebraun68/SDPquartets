@@ -1,0 +1,131 @@
+[ebraun68@login8 SDPquartets]$ python sdp_quartets.py -i Balaenopteroidea.nex -o Balaenopteroidea_SDP -b --clean
+[2026-06-25 10:08:20] SDPquartets analysis started
+[2026-06-25 10:08:20] Generated random seed from system clock: 2132556096
+[2026-06-25 10:08:20] PAUP* found at: paup
+[2026-06-25 10:08:20] Note: Bootstrap analysis requires PAUP*, enabling --paup
+[2026-06-25 10:08:20] Detected input format: NEXUS
+[2026-06-25 10:08:20] Read 7 taxa, 17225 characters
+[2026-06-25 10:08:20] Analyzing 35 quartets...
+[2026-06-25 10:08:20] Quartet analysis complete: 35 resolved, 0 2-way ties, 0 3-way ties
+[2026-06-25 10:08:20] MRP matrix written: 70 characters
+[2026-06-25 10:08:20] Appending PAUP* block and running optimal tree search...
+[2026-06-25 10:08:20] PAUP* optimal tree analysis completed successfully
+[2026-06-25 10:08:20] Starting bootstrap analysis with 100 replicates...
+[2026-06-25 10:08:20] Bootstrap files will be written to: Balaenopteroidea_SDP/
+[2026-06-25 10:08:20] Processing bootstrap replicate 1/100
+[2026-06-25 10:08:25] Processing bootstrap replicate 10/100
+[2026-06-25 10:08:29] Processing bootstrap replicate 20/100
+[2026-06-25 10:08:33] Processing bootstrap replicate 30/100
+[2026-06-25 10:08:38] Processing bootstrap replicate 40/100
+[2026-06-25 10:08:42] Processing bootstrap replicate 50/100
+[2026-06-25 10:08:46] Processing bootstrap replicate 60/100
+[2026-06-25 10:08:50] Processing bootstrap replicate 70/100
+[2026-06-25 10:08:54] Processing bootstrap replicate 80/100
+[2026-06-25 10:08:58] Processing bootstrap replicate 90/100
+[2026-06-25 10:09:02] Processing bootstrap replicate 100/100
+[2026-06-25 10:09:03] Bootstrap weighted treefile written: Balaenopteroidea_SDP.bootstrap_trees.tre
+[2026-06-25 10:09:03] Bootstrap complete: 100/100 successful replicates, 123 total trees
+[2026-06-25 10:09:03] Cleaned up bootstrap directory: Balaenopteroidea_SDP/
+============================================================
+SDPquartets Analysis Summary
+============================================================
+Input file:        Balaenopteroidea.nex
+Taxa:              7
+Characters:        17225
+Total quartets:    35
+------------------------------------------------------------
+Resolved (1 MP):   35 (100.00%)
+Two-way ties:      0 (0.00%)
+Three-way ties:    0 (0.00%)
+------------------------------------------------------------
+MRP characters:    70
+Mode:              Compact (2x/1x, 3-way ties excluded)
+Search mode:       Thorough (increase=yes)
+------------------------------------------------------------
+Output files:
+  Quartet log:     Balaenopteroidea_SDP.quartet_log.tsv
+  Quartet trees:   Balaenopteroidea_SDP.quartets.tre
+  MRP matrix:      Balaenopteroidea_SDP.mrp.nex
+  PAUP* trees:     Balaenopteroidea_SDP.SDPtrees.tre
+  Consensus tree:  Balaenopteroidea_SDP.SDPconstree.tre
+  Bootstrap dir:   Balaenopteroidea_SDP/ (cleaned)
+  Bootstrap trees: Balaenopteroidea_SDP.bootstrap_trees.tre
+  Random seed:     2132556096
+------------------------------------------------------------
+Bootstrap statistics (MP trees per replicate):
+  Single-tree replicates:   77
+  Multi-tree replicates:    23
+  Min / Q1 / Median / Q3 / Max: 1 / 1 / 1 / 1 / 2
+============================================================
+[2026-06-25 10:09:03] Analysis complete
+
+
+############################################################
+#           PAUP* consensus tree generation                #
+############################################################
+
+
+123 trees read from TREES block; time used = 0.00 sec (CPU time = 0.00 sec)
+Processing of input file "Balaenopteroidea_SDP.bootstrap_trees.tre" completed.
+paup> deroot;
+123 trees converted from rooted to unrooted.
+paup> outgroup NA;
+Outgroup status changed:
+  1 taxon transferred to outgroup
+  Total number of taxa now in outgroup = 1
+  Number of ingroup taxa = 6
+paup> contree all / majrule=yes le50=yes usetreewts=yes;
+Strict consensus of 123 trees:
+/------------------------------------------------------------------------------------------------------------------------------------------------ NA
+|
+|                                   /------------------------------------------------------------------------------------------------------------ MW
+|                                   |
+|                                   |                                   /------------------------------------------------------------------------ GW
+\-----------------------------------+                                   |
+                                    |                                   |                                   /------------------------------------ FW
+                                    |                                   +-----------------------------------+
+                                    \-----------------------------------+                                   \------------------------------------ HW
+                                                                        |
+                                                                        |                                   /------------------------------------ SW
+                                                                        \-----------------------------------+
+                                                                                                            \------------------------------------ BW
+
+50% Majority-rule consensus of 123 trees (using tree weights, sum = 100)
+
+/--------------------------------------------------------------------------------------------------------------------------------------------- NA(1)
+|
+|                           /----------------------------------------------------------------------------------------------------------------- MW(2)
+|                           |
+|                           |                                                        /-------------------------------------------------------- GW(3)
+\---------------------------+                                                        |
+                            |                           /-------------84-------------+                           /---------------------------- FW(4)
+                            |                           |                            \------------100------------+
+                            \------------100------------+                                                        \---------------------------- HW(5)
+                                                        |
+                                                        |                                                        /---------------------------- SW(6)
+                                                        \--------------------------100---------------------------+
+                                                                                                                 \---------------------------- BW(7)
+
+Bipartitions found in one or more trees and frequency of occurrence:
+
+1234567          Freq
+---------------------
+.....**        100.00
+...**..        100.00
+..*****        100.00
+..***..         83.50
+..*..**         16.50
+
+
+############################################################
+#                       Taxon List                         #
+############################################################
+
+MW — minke whale (Balaenoptera acutorostrata)
+GW — gray whale (Eschrichtius robustus)
+FW — fin whale (Balaenoptera physalus)
+HW — humpback whale (Megaptera novaeangliae)
+SW — sei whale (Balaenoptera borealis)
+BW — blue whale (Balaenoptera musculus)
+NA - North Atlantic right whale (Eubalaena glacialis) OUTGROUP
+

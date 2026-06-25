@@ -1,0 +1,49 @@
+COMMAND: python rgc_quartet_asym.py -i Palaeognathae.nex -t Palaeognathae_ASTRAL_BP_species.tree -o QUARTETasym_Palaeognathae
+
+[2026-05-12 21:40:02] Quartet Asymmetry Test started
+[2026-05-12 21:40:02] Detected input format: NEXUS
+[2026-05-12 21:40:02] Read 13 taxa, 4301 characters
+[2026-05-12 21:40:02] Reading species tree...
+[2026-05-12 21:40:02] Tree has 12 internal nodes
+[2026-05-12 21:40:02] Extracting quadripartitions...
+[2026-05-12 21:40:02] Found 10 quadripartitions
+[2026-05-12 21:40:02] Analyzing 368 valid quartets across 10 quadripartitions...
+[2026-05-12 21:40:02] Quartet analysis complete
+[2026-05-12 21:40:02] Writing detailed results to QUARTETasym_Palaeognathae.quartet_asym.tsv
+[2026-05-12 21:40:02] Writing summary to QUARTETasym_Palaeognathae.quadripartition_summary.tsv
+[2026-05-12 21:40:02] Writing labeled tree to QUARTETasym_Palaeognathae.labeled_tree.tre
+======================================================================
+Quartet Asymmetry Test Summary
+======================================================================
+Input file:        Palaeognathae.nex
+Species tree:      Palaeognathae_ASTRAL_BP_species.tree
+Taxa:              13
+Characters:        4301
+Quadripartitions:  10
+Total quartets:    368
+Alpha level:       0.05
+----------------------------------------------------------------------
+Majority quartets (ab|cd highest): 368 (100.0%)
+Non-majority quartets:             0 (0.0%)
+----------------------------------------------------------------------
+Asymmetry tests (minority quartets):
+  Significant uncorrected (P<0.05): 8 (2.2%)
+  Significant BH       corrected:    0 (0.0%)
+  Significant BY       corrected:    0 (0.0%)
+  Significant bonferroni corrected:    0 (0.0%)
+  Significant holm     corrected:    0 (0.0%)
+----------------------------------------------------------------------
+Branches with at least one significant minority quartet asymmetry:
+  Significant uncorrected (P<0.05): 1 of 10 branches
+  Significant BH       corrected:    0 of 10 branches
+  Significant BY       corrected:    0 of 10 branches
+  Significant bonferroni corrected:    0 of 10 branches
+  Significant holm     corrected:    0 of 10 branches
+----------------------------------------------------------------------
+Output files:
+  Detailed results: QUARTETasym_Palaeognathae.quartet_asym.tsv
+  Summary:          QUARTETasym_Palaeognathae.quadripartition_summary.tsv
+  Labeled tree:     QUARTETasym_Palaeognathae.labeled_tree.tre
+======================================================================
+[2026-05-12 21:40:02] Analysis complete
+

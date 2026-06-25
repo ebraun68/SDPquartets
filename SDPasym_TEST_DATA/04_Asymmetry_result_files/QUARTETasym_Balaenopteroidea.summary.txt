@@ -1,0 +1,157 @@
+==============================================================================
+TAXON INVOLVEMENT IN SIGNIFICANT ASYMMETRIC QUARTETS (BH CORRECTED)
+==============================================================================
+
+Correction method: BH
+Alpha level:       0.05
+
+Direction interpretation:
+  Positive bias (+): taxon in quartets where ac|bd > ad|bc
+    (left-side taxa cluster with group_c more than group_d)
+  Negative bias (-): taxon in quartets where ad|bc > ac|bd
+    (left-side taxa cluster with group_d more than group_c)
+
+Column descriptions:
+  ac|bd / ad|bc  Quartets where each minority topology is favored
+  Bias           (ac|bd - ad|bc) / (ac|bd + ad|bc); range [-1, +1]
+  R1             Mean(n_favored_minority / n_disfavored_minority);
+                 direction set by taxon-level lean.
+                 inf(N): all N quartets had disfavored minority = 0
+                 X.XX(N): mean of included quartets; N excluded
+  R2             Mean(n_favored_minority / n_ab_cd);
+                 X.XX(N): N quartets excluded where n_ab_cd = 0
+  >maj           Quartets where n_favored_minority > n_ab_cd
+
+The binomial test P-value tests for a directional bias across
+all significant quartets. Fewer than 6 significant quartets
+gives insufficient power to assess directionality.
+
+------------------------------------------------------------------------------
+Branch: 3 <--> 2
+Significant quartets: 6 (100.0% of 6 total)
+
+Quadripartition: (BW,SW),(FW,GW,HW)|(MW),(NA)
+
+Direction: ac|bd favored in 6 (100.0%), ad|bc in 0 (0.0%)
+Binomial test: P = 0.0313 *
+
+  GROUP A (left side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  BW                          3   50.0%        3        0  +1.00         1.34         0.51      0
+  SW                          3   50.0%        3        0  +1.00         1.24         0.56      0
+
+  GROUP B (left side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  FW                          2   33.3%        2        0  +1.00         1.38         0.59      0
+  GW                          2   33.3%        2        0  +1.00         1.24         0.52      0
+  HW                          2   33.3%        2        0  +1.00         1.25         0.51      0
+
+  GROUP C (right side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  MW                          6  100.0%        6        0  +1.00         1.29         0.54      0
+
+  GROUP D (right side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  NA                          6  100.0%        6        0  +1.00         1.29         0.54      0
+
+------------------------------------------------------------------------------
+Branch: 4 <--> 3
+Significant quartets: 6 (100.0% of 6 total)
+
+Quadripartition: (BW),(SW)|(FW,GW,HW),(MW,NA)
+
+Direction: ac|bd favored in 6 (100.0%), ad|bc in 0 (0.0%)
+Binomial test: P = 0.0313 *
+
+  GROUP A (left side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  BW                          6  100.0%        6        0  +1.00         1.34         0.44      0
+
+  GROUP B (left side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  SW                          6  100.0%        6        0  +1.00         1.34         0.44      0
+
+  GROUP C (right side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  FW                          2   33.3%        2        0  +1.00         1.32         0.41      0
+  GW                          2   33.3%        2        0  +1.00         1.37         0.46      0
+  HW                          2   33.3%        2        0  +1.00         1.34         0.44      0
+
+  GROUP D (right side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  MW                          3   50.0%        3        0  +1.00         1.26         0.46      0
+  NA                          3   50.0%        3        0  +1.00         1.42         0.41      0
+
+------------------------------------------------------------------------------
+Branch: 5 <--> 3
+Significant quartets: 3 (37.5% of 8 total)
+
+Quadripartition: (BW,SW),(MW,NA)|(FW,HW),(GW)
+
+Direction: ac|bd favored in 0 (0.0%), ad|bc in 3 (100.0%)
+Binomial test: P = 0.2500 
+
+WARNING: Fewer than 6 significant quartets -- insufficient power for directionality test
+
+  GROUP A (left side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  BW                          2   66.7%        0        2  -1.00         1.13         1.16      1
+  SW                          1   33.3%        0        1  -1.00         1.14         1.02      1
+
+  GROUP B (left side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  NA                          2   66.7%        0        2  -1.00         1.16         1.17      2
+  MW                          1   33.3%        0        1  -1.00         1.09         0.99      0
+
+  GROUP C (right side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  FW                          3  100.0%        0        3  -1.00         1.14         1.11      2
+
+  GROUP D (right side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  GW                          3  100.0%        0        3  -1.00         1.14         1.11      2
+
+------------------------------------------------------------------------------
+Branch: 6 <--> 5
+Significant quartets: 1 (25.0% of 4 total)
+
+Quadripartition: (BW,MW,NA,SW),(GW)|(FW),(HW)
+
+Direction: ac|bd favored in 1 (100.0%), ad|bc in 0 (0.0%)
+Binomial test: P = 1.0000 
+
+WARNING: Fewer than 6 significant quartets -- insufficient power for directionality test
+
+  GROUP A (left side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  NA                          1  100.0%        1        0  +1.00         1.21         0.51      0
+
+  GROUP B (left side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  GW                          1  100.0%        1        0  +1.00         1.21         0.51      0
+
+  GROUP C (right side, first):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  FW                          1  100.0%        1        0  +1.00         1.21         0.51      0
+
+  GROUP D (right side, second):
+  Taxon                   Count       %    ac|bd    ad|bc   Bias           R1           R2   >maj
+  -----------------------------------------------------------------------------------------------
+  HW                          1  100.0%        1        0  +1.00         1.21         0.51      0
+
+==============================================================================
